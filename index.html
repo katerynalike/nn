@@ -1,44 +1,39 @@
+
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <title>Cool Water — Галерея</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #fffaf9;
-      margin: 0;
-      padding: 1em;
-      text-align: center;
-    }
-    h1 {
-      color: #b07ba0;
-    }
-    .gallery {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1em;
-      margin-top: 2em;
-    }
-    .gallery a img {
-      width: 200px;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог квітів</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Cool Water</h1>
-  <p>Ніжна лавандова троянда з глибоким характером</p>
-  <div class="gallery">
-    <a href="images/rose1.jpg" data-lightbox="coolwater"><img src="images/rose1.jpg" alt="Cool Water 1"></a>
-    <a href="images/rose2.jpg" data-lightbox="coolwater"><img src="images/rose2.jpg" alt="Cool Water 2"></a>
-    <a href="images/rose3.jpg" data-lightbox="coolwater"><img src="images/rose3.jpg" alt="Cool Water 3"></a>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js"></script>
+    <h1 class="title">Каталог квітів</h1>
+    <div class="gallery">
+        <div class="card">
+            <img src="img/Cool-Water.PNG" alt="Cool Water" />
+            <a href="#contacts" class="dots">...</a>
+        </div>
+        <div class="card">
+            <img src="img/Cabaret.PNG" alt="Cabaret" />
+            <a href="#contacts" class="dots">...</a>
+        </div>
+        <div class="card">
+            <img src="img/Paloma.PNG" alt="Paloma" />
+            <a href="#contacts" class="dots">...</a>
+        </div>
+        <div class="card">
+            <img src="img/Pandora.PNG" alt="Pandora" />
+            <a href="#contacts" class="dots">...</a>
+        </div>
+    </div>
+    <footer id="contacts">
+        <p>Зв’язатися з нами:</p>
+        <div class="buttons">
+            <a href="https://t.me/+380674656284" class="btn telegram">Telegram</a>
+            <a href="viber://chat?number=+380674656284" class="btn viber">Viber</a>
+            <a href="https://wa.me/380674656284" class="btn whatsapp">WhatsApp</a>
+        </div>
+    </footer>
 </body>
 </html>
